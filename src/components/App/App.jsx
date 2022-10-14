@@ -5,7 +5,8 @@ import s from './app.module.scss';
 
 export const App = () => {
   const urlLocal = window.location.href;
-  const [citySelect, setCitySelect] = React.useState(urlLocal.slice(22).length > 0 ? urlLocal.slice(22) : 'Лондон');
+  const req = /([%].+)\b/gm;
+  const [citySelect, setCitySelect] = React.useState(urlLocal.match(req) ? urlLocal.match(req).join('') : 'Лондон'); 
 
   const getCity = (city) => {
     setCitySelect(city);
