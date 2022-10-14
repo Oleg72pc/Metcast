@@ -17,7 +17,7 @@ export const WeatherContainer = ({ citySelect, onChange }) => {
   const req = /([%].+)\b/gm;
   const [city, setCity] = React.useState(null);
   const APIKEY = "041bcd2cc5c4570e5ee012e7c48aeb00";
-  const URL = `http://api.openweathermap.org/data/2.5/weather?q=${urlLocal.match(req) ? urlLocal.match(req).join('') : 'Лондон'}&units=metric&lang=ru&appid=${APIKEY}`;  //костыли с передачей параметра в url, не придумал как сделать лучше, на реакте, без использования страниц городов. ¯\_(ツ)_/¯ понять и простить
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${urlLocal.match(req) ? urlLocal.match(req).join('') : 'Лондон'}&units=metric&lang=ru&appid=${APIKEY}`;  //костыли с передачей параметра в url, не придумал как сделать лучше, на реакте, без использования страниц городов. ¯\_(ツ)_/¯ понять и простить
   const navigate = useNavigate();
 
   const cities = ["Лондон", "Токио", "Москва", "Нью-Йорк", "Мехико", "Бангкок", "Рим", "Каир", "Сидней", "Париж"];
