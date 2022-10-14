@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'Radiotechnika';
+  src: url(../../assets/fonts/Radiotechnika.ttf);
+}
+
+@font-face {
+  font-family: 'Proximanova';
+  src: url(../../assets/fonts/proximanova_regular.ttf);
+}
+
+.container {
+  margin: 5px;
+  color: #3abfc7;
+  font-family: Proximanova;
+  
+
+  .date {
+    font-family: Radiotechnika;
+    color: #ffffff;
+    font-size: 12px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .btn {
+    cursor: pointer;
+    padding: 5px;
+    font-family: Radiotechnika;
+    color: #ffffff;
+    background: #3abfc7;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px 0 15px;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid #3abfc7;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+  .select {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    background: #3abfc7;
+    color: white;
+    font-size: 16px;
+    font-family: 'Proximanova';
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+
+.rowOne {
+  display: flex;
+  justify-content: space-around;
+
+  .blockOne {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tempN {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: Radiotechnika;
+  }
+
+  .tempS {
+    padding-bottom: 30px;
+    color: #ffffff;
+  }
+
+  .blockTwo {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: end;
+
+    .city {
+      font-family: Radiotechnika;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 26px;
+    }
+
+    .date {
+      color: #ffffff;
+      font-size: 12px;
+    }
+
+    .description {
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    .time {
+      font-family: Radiotechnika;
+      color: #ffffff;
+      font-size: 10px;
+    }
+  }
+}
+
+.rowTwo {
+  display: flex;
+  justify-content: space-around;
+
+  .text {
+    margin-left: 3px;
+  }
+
+  .number {
+    font-family: Radiotechnika;
+    margin-left: 3px;
+    color: #ffffff;
+  }
+
+  .iconTitle {
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+  }
+
+  .blockOne {
+    align-self: center;
+    border-left: 1px solid #3abfc7;
+    margin: 5px;
+    font-size: 12px;
+
+  }
+
+  .blockTwo {
+    align-self: center;
+    border-left: 1px solid #3abfc7;
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .blockThree {
+    border-left: 1px solid #3abfc7;
+    margin: 5px;
+    font-size: 12px;
+    align-self: flex-start;
+  }
+}
+
+.rowThree {
+  display: flex;
+  justify-content: flex-end;
+
+  .text {
+    margin-right: 5px;
+    color: white;
+  }
+}
