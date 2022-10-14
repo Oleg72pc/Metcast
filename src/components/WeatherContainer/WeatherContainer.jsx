@@ -66,7 +66,7 @@ export const WeatherContainer = ({ citySelect, onChange }) => {
             <div className={s.text}>Сегодня: <span className={s.date}>{new Intl.DateTimeFormat('ru-RU', optionsDate).format(city.dt * 1000)}</span></div>
             <div className={s.rowOne}>
               <div className={s.blockOne}>
-                <div><img className={s.icon} src={`http://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`} alt="imgWeather" /></div>
+                <div><img className={s.icon} src={`https://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`} alt="imgWeather" /></div>
                 <div className={s.tempN}>{Math.round(city.main.temp)}</div>
                 <div className={s.tempS}>°C</div>
               </div>
