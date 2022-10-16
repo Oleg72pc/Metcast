@@ -12,12 +12,12 @@
   margin: 5px;
   color: #3abfc7;
   font-family: Proximanova;
-  
+
 
   .date {
     font-family: Radiotechnika;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .text {
@@ -105,7 +105,7 @@
 
     .date {
       color: #ffffff;
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .description {
@@ -116,7 +116,7 @@
     .time {
       font-family: Radiotechnika;
       color: #ffffff;
-      font-size: 10px;
+      font-size: 14px;
     }
   }
 }
@@ -161,6 +161,12 @@
     margin: 5px;
     font-size: 12px;
     align-self: flex-start;
+
+    .remark {
+      margin-left: 5px;
+      color: white;
+      font-size: 10px;
+    }
   }
 }
 
@@ -172,4 +178,5 @@
     margin-right: 5px;
     color: white;
   }
+
 }

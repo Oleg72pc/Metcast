@@ -17,7 +17,7 @@ export const WeatherContainer = ({ citySelect, onChange }) => {
   const req = /([%].+)\b/gm;
   const [city, setCity] = React.useState(null);
   const APIKEY = "041bcd2cc5c4570e5ee012e7c48aeb00";
-  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${urlLocal.match(req) ? urlLocal.match(req).join('') : 'Лондон'}&units=metric&lang=ru&appid=${APIKEY}`;  //костыли с передачей параметра в url, не придумал как сделать лучше, на реакте, без использования страниц городов. ¯\_(ツ)_/¯ понять и простить
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${urlLocal.match(req) ? urlLocal.match(req).join('') : 'Лондон'}&units=metric&lang=ru&appid=${APIKEY}`;
   const navigate = useNavigate();
 
   const cities = ["Лондон", "Токио", "Москва", "Нью-Йорк", "Мехико", "Бангкок", "Рим", "Каир", "Сидней", "Париж"];
@@ -91,6 +91,7 @@ export const WeatherContainer = ({ citySelect, onChange }) => {
               <div className={s.blockThree}>
                 <div className={s.text}><img className={s.iconTitle} src={sunrise} alt="iconTitle" />Восход: <label className={s.number}>{new Intl.DateTimeFormat('ru-RU', optionsTime).format(city.sys.sunrise * 1000).slice(0, -3)}</label></div>
                 <div className={s.text}><img className={s.iconTitle} src={sunset} alt="iconTitle" />Закат: <label className={s.number}>{new Intl.DateTimeFormat('ru-RU', optionsTime).format(city.sys.sunset * 1000).slice(0, -3)}</label></div>
+                <div className={s.remark}>* по времени МСК</div>
               </div>
             </div>
             <div className={s.rowThree}>
